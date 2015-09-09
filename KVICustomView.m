@@ -28,6 +28,16 @@
     return self;
 }
 
+- (instancetype)init {
+    self = [super init];
+    
+    if (self != nil) {
+        [self loadViewFromNib];
+    }
+    
+    return self;
+}
+
 #pragma mark - Properties
 
 - (NSString *)nibName {
